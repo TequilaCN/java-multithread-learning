@@ -1,2 +1,2 @@
 # java-multithread-learning
-demo of java-multi-thread
+《Java多线程编程核心技术》实验demo
