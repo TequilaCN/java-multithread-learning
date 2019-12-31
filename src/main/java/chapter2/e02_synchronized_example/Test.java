@@ -27,7 +27,7 @@ public class Test {
             public void run() {
                 super.run();
                 try {
-                    object.asynchronizedMethodB();
+                    object.synchronizedMethodA();
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }

@@ -15,7 +15,7 @@ public class ReadData {
             int readLength = inputStream.read(bytes);
             while(readLength!=-1){
                 String newData = new String(bytes);
-                System.out.print(newData);
+                System.out.print("read data ==>" + newData);
                 readLength = inputStream.read(bytes);
             }
         }catch (IOException e){

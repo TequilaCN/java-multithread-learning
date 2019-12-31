@@ -9,7 +9,7 @@ public class Test {
     public static void main(String[] args) throws InterruptedException {
         SleepThread sleepThread = new SleepThread();
         sleepThread.start();
-        Thread.sleep(5000L);
+//        Thread.sleep(5000L);
         sleepThread.interrupt();
     }
 }

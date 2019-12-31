@@ -11,7 +11,7 @@ public class SafeThread extends Thread {
         super.run();
         while (count > 0) {
             count--;
-            System.out.println("operated by thread:" + currentThread().getName() + "before operated count:" + (count + 1) + ", current count:" + count);
+            System.out.println("operated by thread:" + currentThread().getName() + "  before operated count:" + (count + 1) + ", current count:" + count);
         }
     }
 }

@@ -14,7 +14,7 @@ public class Test {
     public static void main(String[] args) throws IOException, InterruptedException {
         PipedInputStream inputStream = new PipedInputStream();
         PipedOutputStream outputStream = new PipedOutputStream();
-        inputStream.connect(outputStream);
+        outputStream.connect(inputStream);
         ReadData readData = new ReadData();
         WriteData writeData = new WriteData();
         Thread readThread = new Thread(){

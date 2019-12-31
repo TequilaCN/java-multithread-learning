@@ -18,8 +18,10 @@ public class InterruptThread extends Thread{
                 System.out.println("i comes to 500 ,thread interrupt!");
             }
             if(i==501){
-                System.out.println("i = 501 , this.interrupted: "+Thread.interrupted());
-                System.out.println("i = 501 , this.interrupted: "+Thread.interrupted());
+                System.out.println("i = 501 , this.isInterrupted: "+this.isInterrupted());
+                System.out.println("i = 501 , this.isInterrupted: "+this.isInterrupted());
+                System.out.println("i = 501 , Thread.interrupted: "+Thread.interrupted());
+                System.out.println("i = 501 , Thread.interrupted: "+Thread.interrupted());
             }
         }
     }

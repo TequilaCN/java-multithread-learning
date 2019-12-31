@@ -17,7 +17,7 @@ public class BeJoinThread extends Thread{
         try {
             System.out.println("被join的线程开始执行");
             joinThread.start();
-            joinThread.join();
+            joinThread.join(10000L);
             System.out.println("被join的线程执行完成");
         }catch (Exception e){
             System.out.println("被join的线程发生了一个异常, 异常详情:");

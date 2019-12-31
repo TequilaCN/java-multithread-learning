@@ -12,7 +12,7 @@ public class IncrementThread extends Thread{
         System.out.println("loop begin");
         long currentTime = System.currentTimeMillis();
         for(int i = 0 ; i < 100000 ; i++){
-//            Thread.yield();
+            Thread.yield();
             count++;
         }
         System.out.println("loop end, cost "+ (System.currentTimeMillis()-currentTime) +"ms");

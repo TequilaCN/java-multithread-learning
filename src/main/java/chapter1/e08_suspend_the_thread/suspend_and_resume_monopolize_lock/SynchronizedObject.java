@@ -8,6 +8,7 @@ public class SynchronizedObject {
     synchronized void printString(){
         System.out.println("Thread: "+Thread.currentThread().getName()+" begin to call printString() method");
         if(Thread.currentThread().getName().equals("a")){
+            System.out.println("thread a will be suspended forever");
             Thread.currentThread().suspend();
         }
     }

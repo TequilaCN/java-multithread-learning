@@ -13,6 +13,7 @@ public class SleepThread extends Thread{
             Thread.sleep(10000L);
         } catch (InterruptedException e) {
             System.out.println("Thread: "+currentThread().getName()+" has been interrupted during sleep, which will throw an interrupted exception.");
+            System.out.println("Thread.interrupted:"+Thread.interrupted());
             e.printStackTrace();
         }
     }

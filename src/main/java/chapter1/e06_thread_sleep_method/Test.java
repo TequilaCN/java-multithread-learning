@@ -17,7 +17,7 @@ public class Test {
     public static void main(String[] args) {
         SleepThread sleepThread = new SleepThread();
         sleepThread.setName("sleep-thread");
-        sleepThread.run();
-//      sleepThread.start();
+//        sleepThread.run();
+      sleepThread.start();
     }
 }

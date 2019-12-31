@@ -1,7 +1,7 @@
 package chapter3.e12_join_method;
 
 /**
- * join作用:相当于将调用joid方法的线程代码嵌入到另一个线程的代码块中,实现同步效果, 但要注意还是两个线程
+ * join作用:相当于将调用join方法的线程代码嵌入到另一个线程的代码块中,实现同步效果, 但要注意还是两个线程
  * 与synchronized区别:join内部通过wait实现, synchronized内部通过对象监视器实现
  * @Author Nacht
  * Created on 13/03/2019

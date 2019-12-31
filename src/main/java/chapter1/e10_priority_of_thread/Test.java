@@ -7,14 +7,36 @@ package chapter1.e10_priority_of_thread;
  * Created on 27/02/2019
  */
 public class Test {
-    public static void main(String[] args) {
-        IncrementThread incrementThread1 = new IncrementThread();
-        IncrementThread incrementThread2 = new IncrementThread();
-        incrementThread1.setName("Thread-1");
-        incrementThread2.setName("Thread-2");
-        incrementThread1.setPriority(1);
-        incrementThread2.setPriority(10);
-        incrementThread1.start();
-        incrementThread2.start();
+    public static void main(String[] args) throws InterruptedException {
+        Thread A = new Thread(){
+            int i = 0 ;
+            @Override
+            public void run() {
+                super.run();
+                while (true) {
+                    i++;
+                    System.out.println("AI:" + i);
+                }
+            }
+        };
+        Thread B = new Thread(){
+            public int i = 0 ;
+            @Override
+            public void run() {
+                super.run();
+                while (true){
+                    i++;
+                    System.out.println("BI:"+i);
+                }
+
+            }
+        };
+        A.setPriority(1);
+        B.setPriority(10);
+        A.start();
+        B.start();
+        Thread.sleep(1000L);
+        A.stop();
+        B.stop();
     }
 }
